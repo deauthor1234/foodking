@@ -1,0 +1,6 @@
+package-lock.json
+package.json
+tailwind.config.js
+config-guide.js
+node_modules/
+dist/output.css

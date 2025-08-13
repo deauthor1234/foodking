@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodKing - Home</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="font-body overflow-x-hidden text-base">
+    <header class="bg-red-600 w-full flex items-center justify-center flex-col text-white relative mb-8"> <!-- header section -->
+        <div id="top" class="w-full fixed top-0 flex justify-center z-50 transition ease-out duration-500 add-padding"> <!-- top wrapper -->
+            <div id="top-content" class="flex justify-between items-center py-6 border-b border-yellow-500 border-opacity-25 max-w-[1200px] w-full"> <!-- top -->
+                <img id="logo" class="h-10" src="assets/images/logo-3.svg" alt=""> <!-- logo -->
+                <img id="logo_two" class="h-[2.6rem] hidden" src="assets/images/foodking-logo.svg" alt=""> <!-- logo -->
+                <nav class="flex gap-16 items-center">
+                    <ul id="menu" class="flex uppercase gap-8 max-960:w-0 max-960:absolute max-960:opacity-0 max-960:pointer-events-none"> <!-- links -->
+                        <li>
+                            <a class="nav_link nav_link_active">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav_link">About</a>
+                        </li>
+                        <li>
+                            <a class="nav_link">Menu</a>
+                        </li>
+                        <li>
+                            <a class="nav_link">Shop</a>
+                        </li>
+                        <li>
+                            <a class="nav_link">Team</a>
+                        </li>
+                        <li>
+                            <a class="nav_link">Contact</a>
+                        </li>
+                        <div class="flex items-center gap-8 555:hidden mx-auto mt-16">
+                            <i class="bx bx-search nav_btn max-555:text-2xl max-555:bg-gray-200 max-555:size-12 max-555:px-[auto] max-555:p-[8px]"></i>
+                            <i class="bx bx-cart nav_btn max-555:text-2xl max-555:bg-gray-200 max-555:size-12 max-555:px-[auto] max-555:p-[8px]"></i>
+                            <button id="order_btn2" class="order_btn border border-white text-white max-555:hidden">ORDER NOW</button>
+                        </div>
+                    </ul>
+                    <div class="text-[1.3rem] flex items-center gap-6"> <!-- nav btns -->
+                        <i id="menu_icon" class="bx bxs-grid max-555:text-3xl nav_btn hidden max-960:block"></i>
+                        <div class="flex items-center gap-6 max-555:hidden relative">
+                            <i class="bx bx-search nav_btn"></i>
+                            <i class="bx bx-cart nav_btn"></i>
+                            <button id="order_btn" class="order_btn border border-white text-white">ORDER NOW</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div> 
+        <div class="max-w-[1200px] w-full flex justify-between items-center pt-32 pb-12 relative overflow-x-hidden add-padding"> <!-- header content -->
+            <div>
+                <h1 class="text-[6.5rem] max-470:text-[5rem] max-[375px]:text-[4.2rem] font-bold uppercase leading-[7.5rem] max-470:leading-[6rem] max-[375px]:leading-[5rem] max-w-9">Super Delicious Chicken</h1>
+                <p class="font-semibold mt-4 mb-7">Start Your Order With Just Only $25.00</p>
+                <button class="order_btn bg-yellow-500 text-black mb-10 flex items-center">ORDER NOW <i class="bx bx-right-arrow-alt text-lg"></i></button>
+                <p>14 --------- 06/24</p>
+            </div>
+            <img class="h-[33rem] absolute left-[35rem] transform -translate-y-4" src="assets/images/chiken.png">
+        </div> 
+    </header>
+
+    <section class="flex justify-center"> <!-- about section -->
+        <div class="section_content flex items-center justify-around max-960:gap-16 gap-24 max-md:flex-col-reverse add-padding">
+            <div class="w-[23rem] max-md:w-full h-[27rem] max-md:h-[23rem] overflow-hidden">
+                <img class="size-full object-cover object-top hover:scale-[1.2] transition duration-1000" src="assets/images/02-2.jpg" alt="">
+            </div>
+            <div class="w-[40rem] max-md:w-fit">
+                <h3 class="heading text-red-600">LEARN SOMETHING ABOUT FOODKING</h3>
+                <div class="text-2xl text-gray-800 uppercase leading-relaxed">
+                    Numquam atque magni doloribus pariatur fugiat minus totam sit voluptatibus, nemo consequuntur explicabo nisi accusantium ipsam sint repudiandae nobis ut? Ea, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aspernatur!
+                </div>
+                <div class="flex items-center gap-10 mt-6">
+                    <div class="size-[4.5rem] rounded-full overflow-hidden">
+                        <img class="object-top object-cover transform scale-150 translate-y-4" src="assets/images/02-2.jpg" alt="">
+                    </div>
+                    <p class="text-lg text-gray-900 font-semibold">NICHOLAS J. MICHEAL / <span class="text-gray-400 text-base font-normal">CEO & Founder</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section> 
+        <div class="pt-8 grid grid-cols-3 gap-6 max-555:px-8 max-[425px]:px-5 max-855:grid-cols-2 max-555:grid-cols-1">
+            <div class="crd group">
+                <img class="crd_img" src="assets/images/03-1.jpg" alt="">
+                <div class="size-full flex flex-col justify-between">
+                    <p class="text-yellow-500">START PRICE $25</p>
+                    <h2 class="text-5xl max-lg:text-4xl max-lg:leading-[3.3rem] w-28 leading-[3.2rem] font-semibold">DELICIOUS HAMBURGER FRIES</h2>
+                    <div class="bg-red-600 crd_btn font-semibold">ORDER NOW</div>
+                </div>
+            </div>
+            <div class="crd group">
+                <img class="crd_img" src="assets/images/09-2.jpg" alt="">
+                <div class="size-full flex flex-col justify-between">
+                    <p class="text-yellow-500">START PRICE $25</p>
+                    <h2 class="text-5xl max-lg:text-4xl max-lg:leading-[3.3rem] w-28 leading-[3.2rem] font-semibold">SUPER CHICKEN FRY</h2>
+                    <div class="bg-red-600 text-black crd_btn font-semibold">ORDER NOW</div>
+                </div>
+            </div>
+            <div class="crd group">
+                <img class="crd_img" src="assets/images/pizza.jpg" alt="">
+                <div class="size-full flex flex-col justify-between">
+                    <p class="text-yellow-500">START PRICE $25</p>
+                    <h2 class="text-5xl max-lg:text-4xl max-lg:leading-[3.3rem] w-28 leading-[3.2rem] font-semibold">DELICIOUS PIZZA</h2>
+                    <div class="bg-red-600 crd_btn font-semibold">ORDER NOW</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="flex justify-center bg-orange-50 mt-8 relative pb-20"> <!-- menu section -->
+        <div class="absolute top-40 left-10 opacity-50 z-[-1]"> <!-- overlay -->
+            <img src="assets/images/pizzashape-1.png" alt="">
+        </div>
+        <div class="section_content add-padding flex flex-col items-center z-[1]">
+            <p class="heading text-red-600">Best Selling Dishes</p>
+            <h4 class="text-5xl text-center font-semibold mb-6">EXPLORE OUR PRODUCTS</h4>
+            <div class="grid grid-cols-4 max-md:grid-cols-3 max-555:grid-cols-2 max-[375px]:grid-cols-1 gap-6">
+                <div class="menu_crd group">
+                    <p class="menu_crd_title">Single Fresh Burger</p>
+                    <p class="text-yellow-400 flex items-center my-2">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <span class="text-gray-500 text-xs ml-2">(6k)</span>
+                    </p>
+                    <p class="text-red-500 font-semibold">Price $27.19</p>
+                    <img class="w-44 mt-4 h-fit" src="assets/images/burger-2.png" alt="">
+                    <div class="menu_crd_btns">
+                        <i class="bx bx-heart text-red-600 cursor-pointer"></i>
+                        <div class="menu_crd_btn"><i class="bx bx-cart-alt"></i> ADD TO CART</div>
+                        <i class="bx bx-fullscreen text-red-600 cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="menu_crd group">
+                    <p class="menu_crd_title">French Noodles</p>
+                    <p class="text-yellow-400 flex items-center my-2">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <span class="text-gray-500 text-xs ml-2">(5k)</span>
+                    </p>
+                    <p class="text-red-500 font-semibold">Price $32.25</p>
+                    <img class="w-44 mt-10 h-fit" src="assets/images/noodles.png" alt="">
+                    <div class="menu_crd_btns">
+                        <i class="bx bx-heart text-red-600 cursor-pointer"></i>
+                        <div class="menu_crd_btn"><i class="bx bx-cart-alt"></i> ADD TO CART</div>
+                        <i class="bx bx-fullscreen text-red-600 cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="menu_crd group">
+                    <p class="menu_crd_title">Double Burger & Fries</p>
+                    <p class="text-yellow-400 flex items-center my-2">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <span class="text-gray-500 text-xs ml-2">(4k)</span>
+                    </p>
+                    <p class="text-red-500 font-semibold">Price $45.03</p>
+                    <img class="w-44 mt-4 h-fit" src="assets/images/main-food.png" alt="">
+                    <div class="menu_crd_btns">
+                        <i class="bx bx-heart text-red-600 cursor-pointer"></i>
+                        <div class="menu_crd_btn"><i class="bx bx-cart-alt"></i> ADD TO CART</div>
+                        <i class="bx bx-fullscreen text-red-600 cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="menu_crd group">
+                    <p class="menu_crd_title">French Chicken & Fries</p>
+                    <p class="text-yellow-400 flex items-center my-2">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <span class="text-gray-500 text-xs ml-2">(3k)</span>
+                    </p>
+                    <p class="text-red-500 font-semibold">Price $18.17</p>
+                    <img class="w-44 mt-14 h-fit" src="assets/images/chicken-french.png" alt="">
+                    <div class="menu_crd_btns">
+                        <i class="bx bx-heart text-red-600 cursor-pointer"></i>
+                        <div class="menu_crd_btn"><i class="bx bx-cart-alt"></i> ADD TO CART</div>
+                        <i class="bx bx-fullscreen text-red-600 cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="menu_crd group">
+                    <p class="menu_crd_title">Super Tasty Pizza</p>
+                    <p class="text-yellow-400 flex items-center my-2">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <span class="text-gray-500 text-xs ml-2">(9k)</span>
+                    </p>
+                    <p class="text-red-500 font-semibold">Price $12.10</p>
+                    <img class="w-44 mt-4 h-fit" src="assets/images/01.png" alt="">
+                    <div class="menu_crd_btns">
+                        <i class="bx bx-heart text-red-600 cursor-pointer"></i>
+                        <div class="menu_crd_btn"><i class="bx bx-cart-alt"></i> ADD TO CART</div>
+                        <i class="bx bx-fullscreen text-red-600 cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="menu_crd group">
+                    <p class="menu_crd_title">Pasta Dish</p>
+                    <p class="text-yellow-400 flex items-center my-2">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <span class="text-gray-500 text-xs ml-2">(6k)</span>
+                    </p>
+                    <p class="text-red-500 font-semibold">Price $37.29</p>
+                    <img class="w-44 mt-10 h-fit" src="assets/images/pasta-3.png" alt="">
+                    <div class="menu_crd_btns">
+                        <i class="bx bx-heart text-red-600 cursor-pointer"></i>
+                        <div class="menu_crd_btn"><i class="bx bx-cart-alt"></i> ADD TO CART</div>
+                        <i class="bx bx-fullscreen text-red-600 cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="menu_crd group">
+                    <p class="menu_crd_title">Potato Fries</p>
+                    <p class="text-yellow-400 flex items-center my-2">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <span class="text-gray-500 text-xs ml-2">(4k)</span>
+                    </p>
+                    <p class="text-red-500 font-semibold">Price $49.93</p>
+                    <img class="w-44 mt-16 h-fit" src="assets/images/potato.png" alt="">
+                    <div class="menu_crd_btns">
+                        <i class="bx bx-heart text-red-600 cursor-pointer"></i>
+                        <div class="menu_crd_btn"><i class="bx bx-cart-alt"></i> ADD TO CART</div>
+                        <i class="bx bx-fullscreen text-red-600 cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="menu_crd group">
+                    <p class="menu_crd_title">Ruti Roll</p>
+                    <p class="text-yellow-400 flex items-center my-2">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <span class="text-gray-500 text-xs ml-2">(8k)</span>
+                    </p>
+                    <p class="text-red-500 font-semibold">Price $11.16</p>
+                    <img class="w-44 mt-14 h-fit" src="assets/images/ruti.png" alt="">
+                    <div class="menu_crd_btns">
+                        <i class="bx bx-heart text-red-600 cursor-pointer"></i>
+                        <div class="menu_crd_btn"><i class="bx bx-cart-alt"></i> ADD TO CART</div>
+                        <i class="bx bx-fullscreen text-red-600 cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section> <!-- deal section -->
+        <div class="flex max-md:flex-col">
+            <div class="w-full max-md:h-[26rem] overflow-hidden relative">
+                <img class="size-full absolute max-md:relative top-0 left-0 object-cover object-center transform scale-150" src="assets/images/burger-2.jpg" alt="">
+            </div>
+            <div class="bg-red-600 p-20 max-470:p-10 relative z-[1]">
+                <div class="absolute top-14 right-10 z-[-1]"> <!-- overlay -->
+                    <img class="w-28 brightness-[100] max-470:brightness-0" src="assets/images/burger-shape-3-3.png" alt="">
+                </div>
+                <div>
+                    <p class="heading text-white">Deal Of The Day</p>
+                    <h3 class="text-white text-5xl max-470:text-4xl font-semibold leading-[3.5rem]">TODAY'S THE HAMBURGER'S DAY</h3>
+                    <p class="my-8 max-md:my-4 text-base text-gray-100">Special Price <span class="text-4xl text-white font-semibold">$55</span></p>
+                    <p class="text-gray-200 mb-8 w-[20rem] max-470:w-full">Unde temporibus quod laboriosam, tenetur quasi consectetur. Iste officiis laudantium quaerat quos hic ipsam qui veritatis amet et eum eos nam ullam, impedit voluptatibus accusantium earum illo similique labore. Magnam, quisquam adipisci!</p>
+                    <div class="cursor-pointer order_btn w-fit border border-white text-white">ORDER NOW</div>
+                </div>
+                <div class="absolute bottom-14 right-10 z-[-1]"> <!-- overlay -->
+                    <img class="w-28 brightness-[100] max-470:brightness-0" src="assets/images/fry-shape-2-3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section> <!-- shopping items section -->
+        <div class="grid grid-cols-5 max-1120:grid-cols-4 max-900:grid-cols-3 max-665:grid-cols-2 max-[425px]:grid-cols-1 w-full">
+            <div class="shop_crd group">
+                <img class="transform group-hover:scale-105 transition duration-200" src="assets/images/pizza-2.png" alt="delicious classic italian pizza">
+                <p class="shop_crd_title">DELICIOUS CLASSIC ITALIAN PIZZA</p>
+                <a class="shop_crd_link" href="#">
+                    <span class="underline peer">Visit Shop</span> 
+                    <i class="bx bx-right-arrow-alt shop_crd_arrow"></i>
+                </a>
+            </div>
+            <div class="shop_crd group">
+                <img class="transform group-hover:scale-105 transition duration-200" src="assets/images/burger-2.png" alt="delicious classic italian pizza">
+                <p class="shop_crd_title">TASTY VEGETABLE HAMBURGER</p>
+                <a class="shop_crd_link" href="#">
+                    <span class="underline peer">Visit Shop</span> 
+                    <i class="bx bx-right-arrow-alt shop_crd_arrow"></i>
+                </a>
+            </div>
+            <div class="shop_crd group">
+                <img class="transform group-hover:scale-105 transition duration-200 pb-4 pt-6" src="assets/images/delicious-burger.png" alt="delicious classic italian pizza">
+                <p class="shop_crd_title">CLASSIC CHICKEN & CHIPS</p>
+                <a class="shop_crd_link" href="#">
+                    <span class="underline peer">Visit Shop</span> 
+                    <i class="bx bx-right-arrow-alt shop_crd_arrow"></i>
+                </a>
+            </div>
+            <div class="shop_crd group">
+                <img class="transform group-hover:scale-105 transition duration-200 pt-3 pb-4 w-[11rem]" src="assets/images/grilled-2.png" alt="delicious classic italian pizza">
+                <p class="shop_crd_title">SUPER GRILLED CHICKEN</p>
+                <a class="shop_crd_link" href="#">
+                    <span class="underline peer">Visit Shop</span> 
+                    <i class="bx bx-right-arrow-alt shop_crd_arrow"></i>
+                </a>
+            </div>
+            <div class="shop_crd group">
+                <img class="transform group-hover:scale-105 transition duration-200 pb-4" src="assets/images/roller-box.png" alt="delicious classic italian pizza">
+                <p class="shop_crd_title">CLASSIC CHIPS & DRINK PACK</p>
+                <a class="shop_crd_link" href="#">
+                    <span class="underline peer">Visit Shop</span> 
+                    <i class="bx bx-right-arrow-alt shop_crd_arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-center"> <!-- testimonial section -->
+        <div class="section_content add-padding flex items-center justify-around max-md:flex-col gap-10 gap-y-12">
+            <div>
+                <div class="heading flex items-center mb-8">
+                    <i class="bx bxs-quote-right text-red-600 text-5xl mr-4"></i> 
+                    Quality Food
+                    <p class="text-yellow-400 flex items-center ml-4">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                    </p>
+                </div>
+                <div class="max-w-[40rem]">
+                    <div class="text-2xl text-gray-800 leading-relaxed">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe maxime natus porro sunt, voluptatem esse at doloremque illo facilis architecto temporibus delectus amet placeat quas dolore eos quidem. Nihil.
+                    </div>
+                    <div class="flex items-center gap-10 mt-6">
+                        <div class="size-[4.5rem] rounded-full overflow-hidden">
+                            <img class="object-top object-cover transform scale-150 translate-y-4" src="assets/images/03-2.jpg" alt="">
+                        </div>
+                        <p class="text-lg text-gray-900 font-semibold">Martha S. Justin / <span class="text-gray-400 text-base font-normal">CEO & Founder</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[22rem] max-md:w-full h-[29rem] max-md:h-[23rem] overflow-hidden relative">
+                <img class="size-full object-cover object-top hover:scale-[1.2] transition duration-1000" src="assets/images/03-2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="flex items-center flex-col bg-red-600 relative mt-[18rem] pt-[17.5rem] z-[2]"> <!-- what we offer section -->
+        <div class="absolute top-[-17.5rem] w-full max-w-[1200px] h-[35rem] flex justify-center items-center add-padding">
+            <img class="size-full absolute top-0 left-0 object-cover object-right mb-8" src="assets/images/port-gi-4.jpg" alt="">
+            <i class="bx bx-play z-[1] text-4xl text-red-600 bg-white size-24 flex justify-center items-center rounded-full"></i>
+        </div>
+        <div class="section_content add-padding grid grid-cols-4 max-900:grid-cols-3 max-695:grid-cols-2 max-[425px]:grid-cols-1 max-695:justify-items-center items-start max-[425px]:text-center max-900:gap-x-8 max-900:gap-y-10 text-white">
+            <div>
+                <i class="bx bx-dish text-yellow-500 text-[3.5rem] mb-4 max-[425px]:text-[4.5rem]"></i>
+                <p class="text-[1.3rem] font-semibold">Best Quality Food</p>
+                <p class="max-w-[13rem] pt-3 text-red-100">Nam cumque a eum nihil perspiciatis repellendus.</p>
+            </div>
+            <div>
+                <i class="bx bx-gift text-yellow-500 text-[3.5rem] mb-4 max-[425px]:text-[4.5rem]"></i>
+                <p class="text-[1.3rem] font-semibold">Fast Food Delivery</p>
+                <p class="max-w-[13rem] pt-3 text-red-100">Nam cumque a eum nihil perspiciatis repellendus.</p>
+            </div>
+            <div>
+                <i class="bx bxs-badge-dollar text-yellow-500 text-[3.5rem] mb-4 max-[425px]:text-[4.5rem]"></i>
+                <p class="text-[1.3rem] font-semibold">Money Back Guarantee</p>
+                <p class="max-w-[13rem] pt-3 text-red-100">Nam cumque a eum nihil perspiciatis repellendus.</p>
+            </div>
+            <div>
+                <i class="bx bx-restaurant text-yellow-500 text-[3.5rem] mb-4 max-[425px]:text-[4.5rem]"></i>
+                <p class="text-[1.3rem] font-semibold">100% Natural Food</p>
+                <p class="max-w-[13rem] pt-3 text-red-100">Nam cumque a eum nihil perspiciatis repellendus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-center"> <!-- blog section -->
+        <div class="section_content add-padding flex items-center flex-col">
+            <p class="heading text-red-600">News & Blog</p>
+            <h4 class="text-5xl mb-12 font-semibold text-center">EXPLORE NEWS & BLOG</h4>
+            <div class="grid grid-cols-3 max-855:grid-cols-2 max-555:grid-cols-1 max-855:gap-y-10 gap-8">
+                <div class="blog_crd group">
+                    <div class="blog_crd_img_wrapper">
+                        <img class="blog_crd_img" src="assets/images/istockphoto-1081422898-612x612.jpg" alt="">
+                    </div>
+                    <div class="blog_crd_info">
+                        <p class="text-red-600 font-semibold">Fast Food</p>
+                        <p class="mr-12 text-gray-500">18 June 2024</p>
+                    </div>
+                    <p class="blog_crd_title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, impedit.</p>
+                    <a class="blog_crd_btn" href="#">READ MORE <i class="bx bx-right-arrow-alt text-lg ml-1"></i></a>
+                </div>
+                <div class="blog_crd group">
+                    <div class="blog_crd_img_wrapper">
+                        <img class="blog_crd_img" src="assets/images/istockphoto-1173140632-612x612.jpg" alt="">
+                    </div>
+                    <div class="blog_crd_info">
+                        <p class="text-red-600 font-semibold">Health Care</p>
+                        <p class="mr-12 text-gray-500">11 May 2024</p>
+                    </div>
+                    <p class="blog_crd_title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, impedit.</p>
+                    <a class="blog_crd_btn" href="#">READ MORE <i class="bx bx-right-arrow-alt text-lg ml-1"></i></a>
+                </div>
+                <div class="blog_crd group">
+                    <div class="blog_crd_img_wrapper">
+                        <img class="blog_crd_img" src="assets/images/istockphoto-1305483524-612x612.jpg" alt="">
+                    </div>
+                    <div class="blog_crd_info">
+                        <p class="text-red-600 font-semibold">Restaurants</p>
+                        <p class="mr-12 text-gray-500">27 August 2024</p>
+                    </div>
+                    <p class="blog_crd_title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, impedit.</p>
+                    <a class="blog_crd_btn" href="#">READ MORE <i class="bx bx-right-arrow-alt text-lg ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex justify-center pb-10"><!-- newsletter section -->
+        <div class="section_content add-margin flex max-855:flex-col px-20 max-695:px-10 max-[425px]:px-5 relative overflow-hidden bg-gradient-to-b from-gray-100 via-rose-50 to-[#fff0] h-fit gap-20 max-855:gap-10">
+            <img class="absolute w-full top-0 left-0 transform scale-110 object-cover z-[-1]" src="assets/images/home1-main-tab-image5.jpg" alt="">
+            <div class="w-full z-[1]">
+                <p class="text-[2.8rem] leading-[3rem] tracking-tight mb-4 font-semibold"><span class="text-[3rem]">s</span>ubscribe our newsletter to get more offers</p>
+                <p class="text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptate cumque explicabo illo animi magni nostrum, in harum quas inventore.</p>
+            </div>
+            <form class="w-full z-[1]">
+                <div class="w-full max-855:flex max-665:block max-855:gap-10 max-855:items-center">
+                    <div class="relative w-full">
+                        <i class="bx bxs-envelope text-zinc-600 text-lg absolute left-6 top-[50%] transform translate-y-[-50%]"></i> 
+                        <input class="w-full flex items-center gap-3 bg-white py-6 pl-14 pr-6" placeholder="Enter email address" required>
+                    </div>
+                    <button type="submit" class="bg-red-600 hover:bg-red-500 cursor-pointer text-white px-9 py-4 max-855:py-6 w-fit my-6 font-semibold min-w-fit">SUBSCRIBE NOW</button type="submit">
+                </div>
+                <div class="text-gray-700 -mb-8"><input type="radio" class="mr-1 cursor-pointer" required> I Agree to the <span class="underline text-gray-900 font-semibold cursor-pointer">Privacy Policy</span></div>
+            </form>
+            <div class="absolute top-6 left-10"> <!-- overlay -->
+                <img class="w-10 brightness-[0]" src="assets/images/fry-shape-2-3.png" alt="">
+            </div>
+            <div class="absolute top-14 left-[50%] transform translate-x-[-40%]"> <!-- overlay -->
+                <img class="w-16 brightness-[0]" src="assets/images/burger-shape-3-3.png" alt="">
+            </div>
+            <div class="absolute top-10 right-8"> <!-- overlay -->
+                <img class="w-14 brightness-[0] rotate-180" src="assets/images/pizzashape-1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-20"> <!-- gallery section -->
+        <div class="flex h-[60vh] max-lg:overflow-x-scroll whitespace-nowrap">
+            <div class="gallery_crd group">
+                <img class="gallery_crd_img" src="assets/images/06-1.jpg" alt="">
+                <div class="gallery_crd_overlay">
+                    <i class="bx bxl-instagram text-white text-5xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="gallery_crd group">
+                <img class="gallery_crd_img" src="assets/images/07-1.jpg" alt="">
+                <div class="gallery_crd_overlay">
+                    <i class="bx bxl-instagram text-white text-5xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="gallery_crd group">
+                <img class="gallery_crd_img" src="assets/images/03-1.jpg" alt="">
+                <div class="gallery_crd_overlay">
+                    <i class="bx bxl-instagram text-white text-5xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="gallery_crd group">
+                <img class="gallery_crd_img" src="assets/images/04-1.jpg" alt="">
+                <div class="gallery_crd_overlay">
+                    <i class="bx bxl-instagram text-white text-5xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="gallery_crd group">
+                <img class="gallery_crd_img" src="assets/images/10-1.jpg" alt="">
+                <div class="gallery_crd_overlay">
+                    <i class="bx bxl-instagram text-white text-5xl cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-800 text-gray-300 flex items-center flex-col relative overflow-x-hidden"> <!-- footer section -->
+        <div class="absolute top-40 -left-24"> <!-- overlay -->
+            <img class="w-48 brightness-[70%]" src="assets/images/burger-4.png" alt="">
+        </div>
+        <div class="absolute bottom-44 -right-10 max-1120:brightness-[70%]"> <!-- overlay -->
+            <img class="w-48" src="assets/images/pizza-2.png" alt="">
+        </div>
+        <div class="w-full border-b-2 border-neutral-700 flex justify-center add-padding z-[1]">
+            <div class="w-full max-w-[1200px] grid grid-cols-3 max-1120:grid-cols-2 max-695:grid-cols-1">
+                <div class="py-20 pr-20 max-[425px]:pr-0">
+                    <img class="h-12" src="assets/images/logo-3.svg" alt="">
+                    <p class="my-8">Ullam, recusandae? 
+                        Quod voluptate temporibus quia inventore quidem ipsam natus impedit rem facilis? Quod, 
+                        rem adipisci reiciendis debitis dolore voluptate quam nesciunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, dolores.
+                    </p>
+                    <div class="text-white flex gap-3">
+                        <i class="bx bxl-facebook bg-neutral-800 bg-opacity-75 text-xl min-h-12 min-w-12 border-2 border-neutral-600 rounded-full flex justify-center items-center cursor-pointer hover:bg-red-600 hover:border-red-600 transition ease-out duration-200"></i>
+                        <i class="bx bxl-twitter bg-neutral-800 bg-opacity-75 text-xl min-h-12 min-w-12 border-2 border-neutral-600 rounded-full flex justify-center items-center cursor-pointer hover:bg-red-600 hover:border-red-600 transition ease-out duration-200"></i>
+                        <i class="bx bxl-linkedin bg-neutral-800 bg-opacity-75 text-xl min-h-12 min-w-12 border-2 border-neutral-600 rounded-full flex justify-center items-center cursor-pointer hover:bg-red-600 hover:border-red-600 transition ease-out duration-200"></i>
+                        <i class="bx bxl-instagram bg-neutral-800 bg-opacity-75 text-xl min-h-12 min-w-12 border-2 border-neutral-600 rounded-full flex justify-center items-center cursor-pointer hover:bg-red-600 hover:border-red-600 transition ease-out duration-200"></i>
+                    </div>
+                </div>
+                <div class="py-20 max-[425px]:px-0 border-x-2 max-1120:border-r-0 max-695:border-x-0 max-695:border-t-2 border-neutral-700">
+                    <p class="text-neutral-300 text-lg mb-6 font-semibold">Popular Foods</p>
+                    <div class="flex justify-between gap-6">
+                        <div class="flex flex-col gap-3">
+                            <p>Hamburger</p>
+                            <p class="leading-5">Chicken Pizza</p>
+                            <p class="leading-5">Chicken & Chips</p>
+                            <p class="leading-5">Vegetable Roll</p>
+                            <p class="leading-5">Sea Fish</p>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <p class="leading-5">French Fries</p>
+                            <p class="leading-5">Hot Dogs</p>
+                            <p class="leading-5">Ruti Rolls</p>
+                            <p class="leading-5">Onion Rings</p>
+                            <p class="leading-5">Tacos Pizza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-20 px-20 max-[425px]:px-0 max-1120:col-span-full max-1120:border-t-2 max-1120:border-neutral-700">
+                    <p class="text-neutral-300 text-lg mb-6 font-semibold">Contact Us</p>
+                    <div>
+                        <p>2103 Address, Adresss, Address 7230, Address</p>
+                        <p class="my-4 text-neutral-300 font-semibold">foodkinginfo@gmail.com</p>
+                        <p class="text-yellow-500 mb-6 font-semibold">+(00)204374664</p>
+                        <p>Monday - Friday: <span class="text-yellow-600">8am - 4pm</span></p>
+                        <p>Saturday: <span class="text-yellow-600">8am - 12pm</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center z-[1]"></div>
+        <div class="flex max-695:flex-col max-695:items-center justify-between py-8 gap-4 w-full max-w-[1200px] add-padding">
+            <p class="text-lg">Copyright <span class="text-yellow-600">&copy; 2024</span> FoodKing. All Rights Reserved.</p>
+            <p><span class="cursor-pointer hover:text-neutral-300">Privacy Policy</span><span class="ml-4 cursor-pointer hover:text-neutral-300">Terms & Condition</span></p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

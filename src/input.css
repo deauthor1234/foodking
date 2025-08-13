@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;  
+
+.nav_link {
+    @apply text-[1.05rem] hover:text-yellow-400 hover:border-b border-yellow-400 transition ease-out duration-300 cursor-pointer;
+}
+
+.nav-change .nav_link {
+    @apply text-[1.05rem] hover:text-green-600 hover:border-b border-green-600 transition ease-out duration-300;
+}
+
+.nav_link_active {
+    @apply font-semibold text-yellow-400 border-b border-yellow-400;
+}
+
+.nav-change .nav_link_active {
+    @apply text-green-600 border-b border-green-600;
+}
+
+.nav_btn {
+    @apply cursor-pointer hover:text-yellow-400 transition ease-out duration-300;
+}
+
+.nav-change .nav_btn {
+    @apply hover:text-green-600;
+}
+
+.nav-change {
+    @apply bg-white text-black shadow-lg; 
+}
+
+.nv-cntnt-chng {
+    @apply py-[1.45rem] border-0;
+}
+
+.menu_show {
+    @apply top-[100%] right-0 gap-0 bg-white text-black text-center shadow-md flex-col w-full max-md:w-80 max-[425px]:w-full transition ease-out duration-500 max-md:h-screen;
+}
+
+.menu_show li {
+    @apply h-12 ;
+}
+
+.menu_show .nav_link {
+    @apply border-0 hover:border-0 size-full flex justify-center items-center hover:text-black hover:bg-[#0002];
+}
+
+.menu_show .nav_link_active {
+    @apply text-white hover:text-white bg-green-600 hover:bg-green-600;
+}
+
+.change-b-color {
+    @apply border-black text-black; 
+} 
+
+.order_btn {
+    @apply hover:bg-green-600 hover:text-white hover:border-green-600 transition ease-out duration-300 py-3 px-5 text-sm font-semibold rounded-sm;
+}
+
+.section_content {
+    @apply w-full max-w-[1200px] py-20;
+}
+
+.heading {
+    @apply mb-4 text-base font-semibold;
+}
+
+.crd {
+    @apply p-12 w-full h-[22rem] relative text-white bg-gradient-to-r from-slate-900 to-transparent;
+}
+
+.crd_img {
+    @apply object-cover object-center absolute top-0 left-0 size-full z-[-1];
+}
+
+.crd_btn {
+    @apply group-hover:bg-yellow-500 w-fit py-3 px-6 text-sm peer-hover:bg-green-600 text-white transition ease-out duration-300 cursor-pointer;
+}
+
+.menu_crd {
+    @apply flex flex-col items-center p-6 w-fit bg-white relative;
+}
+
+.menu_crd_title {
+    @apply font-semibold text-gray-800;
+}
+
+.menu_crd_btns {
+    @apply group-hover:opacity-100 opacity-0 group-hover:pointer-events-auto pointer-events-none transition duration-500 flex items-center justify-center gap-3 w-full absolute bottom-0 pb-8;
+}
+
+.menu_crd_btn {
+    @apply font-addtocart text-[0.82rem] text-white bg-red-600 flex items-center gap-1 py-2 px-4 cursor-pointer;
+}
+
+.menu_crd_btn .bx {
+    @apply text-base;
+}
+
+.shop_crd {
+    @apply size-full flex items-center flex-col border-r border-b border-red-400 py-14 px-8;
+}
+
+.shop_crd_title {
+    @apply text-xl text-gray-800 text-center font-semibold mx-4 mt-1 mb-4;
+}
+
+.shop_crd_link {
+    @apply text-red-500 text-[0.85rem] font-semibold flex items-center uppercase;
+}
+
+.shop_crd_arrow {
+    @apply transform peer-hover:translate-x-1 transition duration-200 text-[1rem];
+}
+
+.blog_crd_img_wrapper {
+    @apply h-[19rem] max-960:h-[15rem] relative mb-4 overflow-hidden;
+}
+
+.blog_crd_img {
+    @apply absolute top-0 left-0 size-full object-cover object-center group-hover:scale-105 transition duration-200;
+}
+
+.blog_crd_info {
+    @apply flex justify-between mb-4 border-b border-gray-700 group-hover:border-red-600 group-hover:border-b-2 pb-4 group-hover:pb-[0.99rem] transition duration-300;
+}
+
+.blog_crd_title {
+    @apply text-gray-800 group-hover:text-gray-900 text-lg font-semibold mb-2;
+}
+
+.blog_crd_btn {
+    @apply text-gray-500 text-sm flex items-center group-hover:text-red-600 font-semibold;
+}
+
+.gallery_crd {
+    @apply size-full relative overflow-hidden max-lg:min-w-60;
+}
+
+.gallery_crd_img {
+    @apply size-full object-cover object-center group-hover:scale-105 transition duration-200;
+}
+
+.gallery_crd_overlay {
+    @apply absolute top-0 left-0 size-full bg-green-600 opacity-0 group-hover:opacity-100 bg-opacity-90 transition duration-300 flex justify-center items-center;
+}
+
+/* Responsive components */
+.add-padding {
+    @apply max-xl:px-8 max-[425px]:px-5;
+}
+
+.add-margin {
+    @apply max-xl:mx-8 max-[425px]:mx-5;
+}
